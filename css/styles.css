@@ -1,0 +1,615 @@
+/* Header Styles */
+.header {
+    background-color: #900;  /* White background */
+    color: #FFF;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  /* Subtle shadow */
+    padding: 15px 0;
+  }
+  
+  .header .container {
+    width: 90%;  /* Adjust container width as needed */
+    margin: 0 auto;  /* Center the container horizontally */
+    display: flex;  /* Arrange logo and navigation side-by-side */
+    justify-content: center;  /* Distribute content with space between */
+    align-items: center;  /* Vertically center content within the header */
+  }
+  
+  .header-content {
+    flex: 1;  /* Allow content to grow within available space */
+  }
+  
+  .logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #FFF;  /* Darker text color */
+    text-decoration: none;  /* Remove underline from link */
+  }
+  
+  .nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav ul {
+    color: #d00;
+    display: flex;
+  }
+  
+  .nav li {
+    color: #DDD;
+    margin-right: 25px;
+  }
+  
+  .nav a {
+    color: #FFF;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: 0.3s;
+  }
+  
+  .nav a:hover {
+    color: #FFF;  /* Darken text on hover */
+    background-color: #500;  /* Light gray background on hover */
+  }
+  
+
+/* Footer Styles */
+.footer {
+    background-color: #f0f0f0;  /* Light gray background */
+    padding: 50px 0;
+  }
+  
+  .container-footer {
+    width: 100%;
+    background-color: #700;
+  }
+  
+  .row {
+    display: flex;  /* Arrange columns horizontally */
+  }
+  
+  .col-lg-4,
+  .col-md-12,
+  .col-sm-12 {
+    padding: 0 25px;  /* Add some padding to columns */
+    width: 33%;  /* Set width for each column */
+  }
+  
+  .footer-top-box {
+    margin-bottom: 30px;
+  }
+  
+  .footer-top-box h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #FFF;
+  }
+  
+  .list-time {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .list-time li {
+    line-height: 1.5;
+    color: #CCC;
+  }
+  
+  .newsletter-box {
+    display: flex;
+    align-items: center;
+  }
+  
+  .newsletter-box .form-group {
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  .newsletter-box input[type="email"] {
+    width: 90%;
+    padding: 10px 15px;
+    border: 1px solid #FFF;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .newsletter-box button {
+    background-color: #500;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .newsletter-box button:hover {
+    background-color: #300;
+  }
+  
+  .footer-link-contact {
+    color: #FFF;
+  }
+  
+  .footer-link-contact h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .footer-link-contact ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-link-contact li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-link-contact li p {
+    line-height: 1.5;
+    color: #999;
+  }
+  
+  .footer-link-contact li p i {
+    margin-right: 10px;
+    color: #CCC;
+  }
+  
+  .footer-link-contact a {
+    color: #CCC;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  .footer-link-contact a:hover {
+    color: #FFF;
+  }
+  
+  /* Products Section Styles */
+.products-container {
+    padding: 20px 0;  /* Add some top and bottom padding */
+    text-align: center;  /* Center content horizontally */
+  }
+  
+  .products-container h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #333;
+  }
+  
+  .product-grid {
+    display: flex;
+    flex-wrap: wrap;  /* Allow items to wrap on smaller screens */
+  }
+  
+  .product-item {
+    width: calc(21% - 0px);  /* Adjust based on desired number of items per row */
+    margin: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  /* Subtle shadow */
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .product-item img {
+    width: 100%;
+    height: 200px;  /* Adjust image height as needed */
+    object-fit: cover;  /* Maintain aspect ratio and resize to fit */
+  }
+  
+  .product-item h3 {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .product-item p {
+    text-align: center;
+    line-height: 1.5;
+    color: #777;
+    margin-bottom: 10px;
+  }
+  
+  .product-item .price {
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .product-item .add-to-cart {
+    color: white;
+    background-color: #900;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .product-item .add-to-cart:hover {
+    background-color: #500;
+  }
+
+  .product-item .all-cat-products {
+    color: white;
+    background-color: #900;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .product-item .all-cat-products:hover {
+    background-color: #500;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  .pagination .btn {
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    color: #333;
+    text-decoration: none;
+    transition: 0.3s;
+    margin: 5px;
+  }
+  
+  .pagination .btn.disabled {
+    opacity: 0.5;
+    cursor: default;
+  }
+  
+  .pagination .btn:hover:not(.disabled) {
+    background-color: #f5f5f5;
+  }
+  
+  .pagination .btn.all-products {
+    background-color: #444;
+    color: white;
+  }
+  
+  .pagination .btn.all-products:hover {
+    background-color: #111;
+  }
+  
+  /*_________________________________________________________BANNER____________________________________________*/
+
+  .banner {
+    position: relative;  /* Overlap image and content */
+    width: 100%;  /* Full-width banner */
+    height: 400px;  /* Adjust height as needed */
+  }
+  
+  .banner img {
+    width: 100%;
+    height: 100%;  /* Cover the entire banner area */
+    object-fit: cover;  /* Maintain aspect ratio and resize to fit */
+  }
+  
+  .banner-content {
+    position: absolute;  /* Position content within the banner */
+    bottom: 0;
+    left: 0;  /* Align content to the left */
+    padding: 30px;
+    color: #333;  /* Light text for better contrast */
+    text-align: left;  /* Left-align content */
+  }
+  
+  .banner-content h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  
+  .banner-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .banner-content .btn {
+    background-color: #900;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .banner-content .btn:hover {
+    background-color: #500;
+  }
+  
+  /* About Us Page Styles */
+.about-us {
+  background-color: #f5f5f5;  /* Light background color */
+  padding: 50px 0;
+}
+
+.about-us .container {
+  width: 80%;  /* Adjust container width as needed */
+  margin: 0 auto;  /* Center the container horizontally */
+  text-align: center;  /* Center content horizontally for main sections */
+}
+
+.about-us h1 {
+  font-size: 30px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.about-us p {
+  line-height: 1.5;
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 25px;
+}
+
+.about-us img {
+  width: 100%;  /* Adjust image width as needed */
+  margin-bottom: 30px;
+}
+
+.about-us h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.values {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.values li {
+  margin-bottom: 15px;
+  color: #777;
+}
+
+.team {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;  /* Allow team member elements to wrap on smaller screens */
+  margin-bottom: 30px;
+}
+
+.team-member {
+  width: calc(33% - 20px);  /* Adjust based on desired number of team members per row */
+  margin: 10px;
+  text-align: center;
+}
+
+.team-member img {
+  width: 100%;
+  border-radius: 50%;  /* Circular image for team members */
+  margin-bottom: 15px;
+}
+
+.team-member h4 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.team-member p {
+  font-size: 14px;
+  color: #777;
+}
+
+.contact-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.contact-info li {
+  margin-bottom: 10px;
+  color: #777;
+  line-height: 1.5;
+}
+
+.contact-info li i {
+  margin-right: 10px;
+  color: #333;
+}
+
+.contact-info a {
+  color: #333;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  color: #000;
+}
+
+/* Profile Section Styles */
+.profile {
+  background-color: #f5f5f5;  /* Light background color */
+  padding: 50px 0;
+}
+
+.container {
+  width: 80%;  /* Adjust container width as needed */
+  margin: 0 auto;  /* Center the container horizontally */
+}
+
+.profile h1 {
+  font-size: 30px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.profile-info img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;  /* Circular profile picture */
+  margin-right: 30px;
+}
+
+.user-details {
+  flex: 1;  /* Expand to fill remaining space */
+}
+
+.user-details h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.user-details p {
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 5px;
+  line-height: 1.5;
+}
+
+.profile h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.orders-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.orders-list li {
+  margin-bottom: 15px;
+  color: #333;
+  line-height: 1.5;
+}
+
+.orders-list li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.orders-list li a:hover {
+  color: #000;
+}
+
+.cart-table {
+  width: 100%; /* Make the table fill the available space */
+  align-items: center;
+  border-collapse: collapse; /* Remove borders between cells for a cleaner look */
+}
+
+.cart-table th,
+.cart-table td {
+  align-items: center;
+  padding: 10px; /* Add some padding for better readability */
+  border: 1px solid #ddd; /* Add a thin border to separate cells */
+  text-align: left; /* Align content to the left by default */
+}
+
+.cart-table th {
+  align-items: center;
+  background-color: #f2f2f2; /* Light gray background for table headers */
+  font-weight: bold; /* Make headers stand out */
+}
+
+.cart-table img {
+  max-width: 50px; /* Limit image width to avoid breaking layout */
+}
+
+.cart-table a {
+  justify-content: center;
+  align-items: center;
+  color: #333; /* Darker text color for links */
+  text-decoration: none; /* Remove underline from links by default */
+}
+
+.cart-table a:hover {
+  text-decoration: underline; /* Add underline on hover for links */
+}
+
+.cart-table input[type="number"] {
+  width: 40px; /* Match the width specified in the HTML */
+  padding: 5px; /* Add some padding for better input handling */
+  border: 1px solid #ccc; /* Add a border to the quantity input */
+}
+
+.cart-table .btn {
+  background-color: #900;
+  color: white;
+  padding: 5px 10px; /* Adjust button padding for better fit */
+  font-size: 14px; /* Adjust button font size */
+  transition: 0.3s;
+}
+
+.cart-table .btn:hover {
+  background-color: #500; /* Red color for remove button */
+  border-color: #100; /* Red border for remove button */
+}
+
+.cart-table .btn-danger {
+  background-color: #900; /* Red color for remove button */
+  color: #fff; /* White text color for remove button */
+  border-color: #500; /* Red border for remove button */
+  transition: 0.3s;
+}
+.cart-table .btn-danger:hover {
+  background-color: #500; /* Red color for remove button */
+  border-color: #100; /* Red border for remove button */
+}
+
+.cart-totals {
+  margin-top: 20px; /* Add some space above the totals section */
+  text-align: right; /* Align content to the right for a cleaner layout */
+}
+
+.cart-totals p {
+  margin-bottom: 10px; /* Add some space below the subtotal */
+  font-weight: bold; /* Make the subtotal stand out */
+}
+
+.cart-totals .btn {
+  background-color: #900;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.cart-totals .btn:hover {
+  background-color: #500;
+}
+
+.cart-totals .btn-primary {
+  background-color: #900;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.cart-totals .btn-primary:hover {
+  background-color: #500;
+}
